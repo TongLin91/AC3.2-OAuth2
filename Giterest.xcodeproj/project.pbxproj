@@ -21,6 +21,7 @@
 		14EB9FEE1DDD3D0F00CC0D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14EB9FEC1DDD3D0F00CC0D29 /* LaunchScreen.storyboard */; };
 		14EB9FF91DDD3D0F00CC0D29 /* Giterest_FullTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EB9FF81DDD3D0F00CC0D29 /* Giterest_FullTests.swift */; };
 		14EBA0031DDD3E3200CC0D29 /* GithubOAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBA0021DDD3E3200CC0D29 /* GithubOAuthManager.swift */; };
+		ED54190D1DDE5CB1002EEC4E /* GithubOAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED54190C1DDE5CB1002EEC4E /* GithubOAuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +45,11 @@
 		14DEA7BA1DDD776F007AEA56 /* GithubRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRequestManager.swift; sourceTree = "<group>"; };
 		14EB9FBA1DDD3CEA00CC0D29 /* Giterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EB9FBD1DDD3CEA00CC0D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14EB9FBF1DDD3CEA00CC0D29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14EB9FBF1DDD3CEA00CC0D29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../Giterest/ViewController.swift; sourceTree = "<group>"; };
 		14EB9FC21DDD3CEA00CC0D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		14EB9FC41DDD3CEA00CC0D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14EB9FC41DDD3CEA00CC0D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Giterest/Assets.xcassets; sourceTree = "<group>"; };
 		14EB9FC71DDD3CEA00CC0D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		14EB9FC91DDD3CEA00CC0D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14EB9FC91DDD3CEA00CC0D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Giterest/Info.plist; sourceTree = "<group>"; };
 		14EB9FCE1DDD3CEA00CC0D29 /* GiterestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiterestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EB9FD21DDD3CEA00CC0D29 /* GiterestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiterestTests.swift; sourceTree = "<group>"; };
 		14EB9FD41DDD3CEA00CC0D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		14EB9FF81DDD3D0F00CC0D29 /* Giterest_FullTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giterest_FullTests.swift; sourceTree = "<group>"; };
 		14EB9FFA1DDD3D0F00CC0D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14EBA0021DDD3E3200CC0D29 /* GithubOAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubOAuthManager.swift; path = Managers/GithubOAuthManager.swift; sourceTree = "<group>"; };
+		ED54190C1DDE5CB1002EEC4E /* GithubOAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubOAuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,23 +122,25 @@
 		14EB9FBC1DDD3CEA00CC0D29 /* Giterest */ = {
 			isa = PBXGroup;
 			children = (
+				ED54190C1DDE5CB1002EEC4E /* GithubOAuthManager.swift */,
 				14EB9FBD1DDD3CEA00CC0D29 /* AppDelegate.swift */,
-				14EB9FBF1DDD3CEA00CC0D29 /* ViewController.swift */,
-				14EB9FC11DDD3CEA00CC0D29 /* Main.storyboard */,
-				14EB9FC41DDD3CEA00CC0D29 /* Assets.xcassets */,
-				14EB9FC61DDD3CEA00CC0D29 /* LaunchScreen.storyboard */,
-				14EB9FC91DDD3CEA00CC0D29 /* Info.plist */,
-				14EB9FD11DDD3CEA00CC0D29 /* GiterestTests */,
+				14EB9FD11DDD3CEA00CC0D29 /* Support */,
 			);
 			path = Giterest;
 			sourceTree = "<group>";
 		};
-		14EB9FD11DDD3CEA00CC0D29 /* GiterestTests */ = {
+		14EB9FD11DDD3CEA00CC0D29 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				14EB9FC11DDD3CEA00CC0D29 /* Main.storyboard */,
+				14EB9FC41DDD3CEA00CC0D29 /* Assets.xcassets */,
+				14EB9FBF1DDD3CEA00CC0D29 /* ViewController.swift */,
+				14EB9FC61DDD3CEA00CC0D29 /* LaunchScreen.storyboard */,
+				14EB9FC91DDD3CEA00CC0D29 /* Info.plist */,
 				14EB9FD21DDD3CEA00CC0D29 /* GiterestTests.swift */,
 				14EB9FD41DDD3CEA00CC0D29 /* Info.plist */,
 			);
+			name = Support;
 			path = GiterestTests;
 			sourceTree = SOURCE_ROOT;
 		};
@@ -258,6 +262,7 @@
 				TargetAttributes = {
 					14EB9FB91DDD3CEA00CC0D29 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7NBTE6SY4Z;
 						ProvisioningStyle = Automatic;
 					};
 					14EB9FCD1DDD3CEA00CC0D29 = {
@@ -341,6 +346,7 @@
 			files = (
 				14EB9FC01DDD3CEA00CC0D29 /* ViewController.swift in Sources */,
 				14EB9FBE1DDD3CEA00CC0D29 /* AppDelegate.swift in Sources */,
+				ED54190D1DDE5CB1002EEC4E /* GithubOAuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +399,7 @@
 				14EB9FC21DDD3CEA00CC0D29 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../Giterest;
 			sourceTree = "<group>";
 		};
 		14EB9FC61DDD3CEA00CC0D29 /* LaunchScreen.storyboard */ = {
@@ -401,6 +408,7 @@
 				14EB9FC71DDD3CEA00CC0D29 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ../Giterest;
 			sourceTree = "<group>";
 		};
 		14EB9FE71DDD3D0F00CC0D29 /* Main.storyboard */ = {
@@ -517,7 +525,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
 				INFOPLIST_FILE = Giterest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.AccessCode.Giterest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,7 +539,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
 				INFOPLIST_FILE = Giterest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.AccessCode.Giterest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

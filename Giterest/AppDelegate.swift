@@ -16,8 +16,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    
+    GithubOAuthManager.configure(clientID: "5d1a62694107f5032556", clientSecret: "b02355f516c98b88f87ab863da29f8760dfef6f2")
+    
+    do{
+        try GithubOAuthManager.shared.requestAuthentication(scopes: [.user, .public_repo])
+    }
+    catch{
+        print("Error: \(error)")
+    }
     return true
   }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        if let sendingApp = options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String{
+            if sendingApp == "com.apple.mobilesafari"{
+                
+                GithubOAuthManager.shared.requestAuthToken(from: url)
+            }
+        }
+        return true
+    }
 
   func applicationWillResignActive(_ application: UIApplication) {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
